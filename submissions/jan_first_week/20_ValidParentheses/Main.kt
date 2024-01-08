@@ -1,9 +1,20 @@
-/* fun main() {
-    println(isValid("()"))
-    println(isValid("()[]{}"))
-    println(isValid("(]"))
-    println(isValid("([)]"))
-    println(isValid("{[]}"))
+// https://leetcode.com/problems/valid-parentheses/ -> 20. Valid Parentheses (Easy)
+
+fun main() {
+    test("()", expected = true)
+    test("()[]{}", expected = true)
+    test("(]", expected = false)
+    test("([)]", expected = false)
+    test("{[]}", expected = true)
+}
+
+fun test(input: String, expected: Boolean) {
+    val result = isValid(input)
+    if (result == expected) {
+        println("test con '$input' ✅ (resultado esperado: $expected)")
+    } else {
+        println("test con '$input' ❌ (resultado esperado: $expected, obtenido: $result)")
+    }
 }
 
 fun isValid(s: String): Boolean {
@@ -18,6 +29,4 @@ fun isValid(s: String): Boolean {
     }
     return stack.isEmpty()
 }
-*/
 
-// https://leetcode.com/problems/valid-parentheses/ -> 20. Valid Parentheses (Easy)
