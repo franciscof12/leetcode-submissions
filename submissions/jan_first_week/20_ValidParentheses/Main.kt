@@ -1,4 +1,4 @@
-fun main() {
+/* fun main() {
     println(isValid("()"))
     println(isValid("()[]{}"))
     println(isValid("(]"))
@@ -18,3 +18,6 @@ fun isValid(s: String): Boolean {
     }
     return stack.isEmpty()
 }
+*/
+
+// https://leetcode.com/problems/valid-parentheses/ -> 20. Valid Parentheses (Easy)
