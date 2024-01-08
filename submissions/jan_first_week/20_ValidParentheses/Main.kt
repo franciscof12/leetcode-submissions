@@ -18,4 +18,3 @@ fun isValid(s: String): Boolean {
     }
     return stack.isEmpty()
 }
-
